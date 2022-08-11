@@ -1,9 +1,9 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import SalesTable from '../components/SalesTable.svelte';
 </script>
 
-<h1>Salmon Cookies</h1>
-<h2>SALES</h2>
+<h2>Sales</h2>
+<SalesTable />
 
 <style>
 </style>
