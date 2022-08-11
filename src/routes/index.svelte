@@ -1,14 +1,21 @@
 <script>
+	import chinookPic from '../img/chinook.jpg';
+	import salmonPic from '../img/salmon.png';
+	import familyPic from '../img/family.jpg';
+	import cutterPic from '../img/cutter.jpeg';
+	import fishPic from '../img/fish.jpg';
+	import frostedCookiePic from '../img/frosted-cookie.jpg';
+	import shirtPic from '../img/shirt.jpg';
 </script>
 
 <h2>Home</h2>
 <main>
 	<section id="sec1">
-		<img src="img/salmon.png" alt="salmon" />
+		<img src={salmonPic} alt="salmon" />
 	</section>
 	<section id="sec2">
 		<h2>Family business for over 100 years!</h2>
-		<img src="img/family.jpg" alt="Family" />
+		<img src={familyPic} alt="Family" />
 	</section>
 	<section id="sec3">
 		<div>
@@ -66,7 +73,7 @@
 		<div>
 			<div id="subsec1">
 				<h3>BAKE AT HOME!</h3>
-				<img src="img/cutter.jpeg" alt="" />
+				<img src={cutterPic} alt="" />
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa non a reiciendis saepe
 					autem neque aliquam, vero harum ratione sit. Eaque unde accusantium exercitationem,
@@ -75,7 +82,7 @@
 			</div>
 			<div id="subsec2">
 				<h3>ALWAYS FRESH!</h3>
-				<img src="img/fish.jpg" alt="" />
+				<img src={fishPic} alt="" />
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa non a reiciendis saepe
 					autem neque aliquam, vero harum ratione sit. Eaque unde accusantium exercitationem,
@@ -86,7 +93,7 @@
 		<div>
 			<div id="subsec3">
 				<h3>ENJOY THEM FROSTED</h3>
-				<img src="img/frosted-cookie.jpg" alt="" />
+				<img src={frostedCookiePic} alt="" />
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa non a reiciendis saepe
 					autem neque aliquam, vero harum ratione sit. Eaque unde accusantium exercitationem,
@@ -95,7 +102,7 @@
 			</div>
 			<div id="subsec4">
 				<h3>BUY A SHIRT!</h3>
-				<img src="img/shirt.jpg" alt="" />
+				<img src={shirtPic} alt="" />
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa non a reiciendis saepe
 					autem neque aliquam, vero harum ratione sit. Eaque unde accusantium exercitationem,
@@ -106,7 +113,7 @@
 	</section>
 </main>
 <footer>
-	<img src="img/chinook.jpg" alt="chinook-salmon" />
+	<img src={chinookPic} alt="chinook-salmon" />
 	<p>Fake Business, LLC</p>
 </footer>
 
