@@ -79,7 +79,7 @@
 		{/each}
 		<th>Total</th>
 	</tr>
-	{#each cityData as city, i}
+	{#each cityData as city}
 		<tr>
 			<!-- Store Location -->
 			<td>{city.cityName}</td>
