@@ -1,5 +1,14 @@
 # svelte-cookies
 
+## Deployment
+
+[Production](https://earnest-horse-f0f965.netlify.app/)
+
+## Authors
+
+- Beau Hibbert
+- Dylan Ullrich
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -11,10 +20,8 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+Dev environment runs on `http://localhost:5173/`
 
-To create a production version of your app:
+## Tools and Resources
 
-```bash
-npm run build
-```
+- Svelte and SvelteKit utilized to recreate Salmon Cookies, which was originally vanilla javascript.
