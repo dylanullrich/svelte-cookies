@@ -5,7 +5,6 @@
 
 <h2>Sales</h2>
 <SalesTable />
-<Form />
 
 <style>
 </style>

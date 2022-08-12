@@ -1,18 +1,47 @@
-<form>
+<!-- <script>
+	// import { createEventDispatcher } from 'svelte';
+	import CookieStore, { cityData } from './SalesTable/SalesTableLogic';
+
+	// const dispatch = createEventDispatcher();
+
+	// function updateTable() {
+	// 	dispatch('updateTable', {
+	// 		newStore: 'Hello!'
+	// 	});
+	// }
+
+	export let cityName = '';
+	// console.log(cityName);
+	export let customerMin;
+	// console.log(customerMin);
+	export let customerMax;
+	// console.log(customerMax);
+	export let avgCookieSoldPerPerson;
+
+	// export function handleSubmit() {
+	// 	console.log(cityData);
+	// 	// console.log(cityData);
+	// 	console.log(new CookieStore(cityName, customerMin, customerMax, avgCookieSoldPerPerson));
+	// 	cityData.push(new CookieStore(cityName, customerMin, customerMax, avgCookieSoldPerPerson));
+	// 	cityData = [...cityData, cityData.length + 1];
+	// }
+</script>
+
+<form on:submit|preventDefault={handleSubmit}>
 	<fieldset>
 		<legend><strong>Add Cookie Stand</strong></legend>
-		<label for="name">Location</label>
-		<input type="text" name="storeLocation" required />
+		<input bind:value={cityName} placeholder="Location" required />
+		<input bind:value={customerMin} placeholder="Customer Minimum" type="number" required />
 
-		<label for="customerMin">Customer Minimum</label>
-		<input type="number" name="customerMin" required />
+		<input bind:value={customerMax} placeholder="Customer Maximum" type="number" required />
 
-		<label for="customerMax">Customer Maximum</label>
-		<input type="number" name="customerMax" required />
+		<input
+			bind:value={avgCookieSoldPerPerson}
+			placeholder="Sold Per Person"
+			type="float"
+			required
+		/>
 
-		<label for="avgCookieSoldPerPerson">Average Cookies Sold Per Person</label>
-		<input type="number" name="avgCookieSoldPerPerson" step="0.1" required />
-
-		<button>Submit</button>
+		<button type="submit">Submit</button>
 	</fieldset>
-</form>
+</form> -->
