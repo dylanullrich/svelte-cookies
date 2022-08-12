@@ -1,5 +1,5 @@
 <script>
-	import Form from '../components/Form.svelte';
+	// import Form from '../components/Form.svelte';
 	import SalesTable from '../components/SalesTable/SalesTable.svelte';
 </script>
 
@@ -7,4 +7,8 @@
 <SalesTable />
 
 <style>
+	* {
+		background-color: #cce3de;
+		color: #f6fff8;
+	}
 </style>

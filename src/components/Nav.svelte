@@ -9,7 +9,8 @@
 <style>
 	div {
 		display: flex;
-		background-color: aliceblue;
+		background-color: #6b9080;
+		color: #f6fff8;
 	}
 
 	nav {
