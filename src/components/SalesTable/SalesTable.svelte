@@ -50,6 +50,16 @@
 		}
 	}
 
+	export let cityName = '';
+	export let customerMin = [];
+	export let customerMax = [];
+	export let avgCookieSoldPerPerson = [];
+
+	function handleSubmit() {
+		cityData.push(new CookieStore(cityName, customerMin, customerMax, avgCookieSoldPerPerson));
+		cityData = cityData;
+	}
+
 	let cityData = [
 		new CookieStore('Seattle', 23, 65, 6.3),
 		new CookieStore('Tokyo', 3, 24, 1.2),
@@ -68,7 +78,7 @@
 		}
 	}
 
-	generateHourlySalesTotal();
+	$: if (cityData) generateHourlySalesTotal();
 </script>
 
 <table>
@@ -99,6 +109,25 @@
 		{/each}
 	</tr>
 </table>
+
+<form on:submit|preventDefault={handleSubmit}>
+	<fieldset>
+		<legend><strong>Add Cookie Stand</strong></legend>
+		<input bind:value={cityName} placeholder="Location" required />
+		<input bind:value={customerMin} placeholder="Customer Minimum" type="number" required />
+
+		<input bind:value={customerMax} placeholder="Customer Maximum" type="number" required />
+
+		<input
+			bind:value={avgCookieSoldPerPerson}
+			placeholder="Sold Per Person"
+			type="float"
+			required
+		/>
+
+		<button type="submit">Submit</button>
+	</fieldset>
+</form>
 
 <style>
 	table,
