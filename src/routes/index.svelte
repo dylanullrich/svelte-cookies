@@ -1,5 +1,4 @@
 <script>
-	import chinookPic from '../img/chinook.jpg';
 	import salmonPic from '../img/salmon.png';
 	import familyPic from '../img/family.jpg';
 	import cutterPic from '../img/cutter.jpeg';
@@ -112,10 +111,14 @@
 		</div>
 	</section>
 </main>
-<footer>
-	<img src={chinookPic} alt="chinook-salmon" />
-	<p>Fake Business, LLC</p>
-</footer>
 
 <style>
+	* {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #cce3de;
+		color: #f6fff8;
+	}
 </style>
